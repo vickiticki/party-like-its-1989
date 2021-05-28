@@ -33,10 +33,12 @@ export class App extends Component {
               return (
                 // need to work on formatting
                 <li key={movie.id}>
-                  Title: {movie.original_title} Plot: {movie.overview}{' '}
                   <img
+                    className="poster"
                     src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`}
                   />
+                  <div className="title">Title: {movie.original_title}</div>
+                  <div className="plot">Plot: {movie.overview} </div>
                 </li>
               )
             })}
