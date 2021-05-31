@@ -12,8 +12,10 @@ class Movie extends Component {
                   className="poster"
                   src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`}
                 />
-                <div className="title">Title: {movie.original_title}</div>
-                <div className="plot">Plot: {movie.overview} </div>
+                <div className="text">
+                  <div className="title">{movie.original_title}</div>
+                  <div className="plot">Plot: {movie.overview} </div>
+                </div>
               </li>
             )
           })}

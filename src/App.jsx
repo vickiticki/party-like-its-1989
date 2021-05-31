@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 // import Movie from '.components/Movie.jsx'
-// import Movie from '.src/components/Movie'
+// import Movie from '.src/components/Movie.jsx'
 import Movie from '/Users/victoriatiller/Desktop/sdg/party-like-its-1989/src/components/Movie.jsx'
 
 export class App extends Component {
@@ -28,6 +28,10 @@ export class App extends Component {
   render() {
     return (
       <div>
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+        </style>
         <h1>Movies</h1>
         <div className="the movies">
           {/* put this in a component-- done */}
