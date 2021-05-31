@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+// import Movie from '.components/Movie.jsx'
+// import Movie from '.src/components/Movie'
+import Movie from '/Users/victoriatiller/Desktop/sdg/party-like-its-1989/src/components/Movie.jsx'
 
 export class App extends Component {
   state = {
@@ -26,23 +29,9 @@ export class App extends Component {
     return (
       <div>
         <h1>Movies</h1>
-        <div className="themovies">
-          {/* put this in a component */}
-          <ul className="movie list">
-            {this.state.results.map((movie, index) => {
-              return (
-                // need to work on formatting
-                <li key={movie.id}>
-                  <img
-                    className="poster"
-                    src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`}
-                  />
-                  <div className="title">Title: {movie.original_title}</div>
-                  <div className="plot">Plot: {movie.overview} </div>
-                </li>
-              )
-            })}
-          </ul>
+        <div className="the movies">
+          {/* put this in a component-- done */}
+          <Movie srsly={this.state.results} />
         </div>
       </div>
     )
